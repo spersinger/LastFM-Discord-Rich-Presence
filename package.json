@@ -1,0 +1,18 @@
+{
+  "name": "lastfm-discord",
+  "version": "1.0.0",
+  "description": "Adds last fm support to discord rich presence",
+  "main": "index.js",
+  "dependencies": {
+    "discord-rpc": "^3.1.2",
+    "discord.js": "^12.2.0",
+    "jquery": "^3.5.1",
+    "jsdom": "^16.3.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sam Persinger",
+  "license": "GPL-3"
+}
