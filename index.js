@@ -17,11 +17,9 @@ const rpc = new RPC.Client({
 var track, artist, album, lastFMname;
 console.log("  LastFM - Discord Rich Presence\n----------------------------------\n    Written by Sam Persinger");
 
-const startTimestamp = new Date();
-
 //set your lastfm name here
 //otherwise it wont work
-lastFMname = 'YOUR_LASTFM_NAME_HERE';
+lastFMname = 'sam-persinger';
 
 async function setActivity() {
 
@@ -44,7 +42,6 @@ async function setActivity() {
             state: 'on ' + album,
             largeImageKey: 'lastfm',
             largeImageText: 'https://github.com/spersinger/LastFM-Discord-Rich-Presence',
-            startTimestamp,
             instance: false,
         });
 
