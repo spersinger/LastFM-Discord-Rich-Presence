@@ -9,7 +9,6 @@ const {
 const $ = require("jquery")(window);
 
 const clientId = '736680578568683540';
-const lastfm = new lastFM('97640b6683d032228a2844d3b1ae70c1');
 const rpc = new RPC.Client({
     transport: 'ipc'
 });
@@ -40,8 +39,6 @@ async function setActivity() {
         rpc.setActivity({
             details: track + ' by ' + artist,
             state: 'on ' + album,
-            largeImageKey: 'lastfm',
-            largeImageText: 'https://github.com/spersinger/LastFM-Discord-Rich-Presence',
             instance: false,
         });
 
